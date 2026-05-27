@@ -1,0 +1,81 @@
+/* Общие настройки */
+body {
+    font-family: 'Raleway', sans-serif; /* Основной шрифт */
+    background-color: #FDF8F5; /* Светлый фон сайта */
+    color: #555;
+}
+
+h1, h2, h3, h4, h5, h6, .logo-text {
+    font-family: 'Playfair Display', serif; /* Шрифт заголовков */
+}
+
+/* Цвета */
+.text-brown {
+    color: #734326 !important; /* Темно-коричневый (как в макете) */
+}
+
+.bg-light-beige {
+    background-color: #F5EDE6; /* Чуть темнее фона для выделения блоков */
+}
+
+.bg-card {
+    background-color: #E6D8CF; /* Цвет карточек услуг и отзывов */
+}
+
+.bg-brown-light {
+    background-color: #D4C4B5; /* Цвет кружочков-аватарок */
+}
+
+/* Кнопки */
+.btn-brown {
+    background-color: #734326;
+    color: white;
+    border: 1px solid #734326;
+    transition: all 0.3s;
+}
+
+.btn-brown:hover {
+    background-color: #5c331d;
+    color: white;
+}
+
+.btn-outline-brown {
+    color: #734326;
+    border: 1px solid #734326;
+    transition: all 0.3s;
+}
+
+.btn-outline-brown:hover {
+    background-color: #734326;
+    color: white;
+}
+
+
+
+.nav-link {
+    color: #734326 !important;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: #a66a45 !important;
+}
+
+/* Отступы и детали */
+.letter-spacing-2 {
+    letter-spacing: 2px;
+}
+
+/* Футер */
+.footer-section {
+    background-color: #734326;
+}
+
+/* Модальное окно */
+.modal-content {
+    background-color: #E6D8CF;
+}
+
+.bg-light-beige {
+    background-color: #F5EDE6 !important;
+}

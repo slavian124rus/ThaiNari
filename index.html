@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thai Nari - Тайский массаж</title>
+    
+    <!-- Подключаем Bootstrap (локально) -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключаем наши стили -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <!-- Подключаем красивые шрифты от Google (бесплатно) -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- Подключаем иконки (Bootstrap Icons) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- ================= ШАПКА (HEADER) ================= -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <!-- Логотип -->
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="images/logo.png" alt="Thai Nari Spa" class="img-fluid">
+            </a>
+            
+            <!-- Кнопка меню для мобильных -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Меню -->
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn btn-brown px-4" data-bs-toggle="modal" data-bs-target="#bookingModal">Записаться</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ================= ГЛАВНЫЙ ЭКРАН (HERO) ================= -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold text-brown mb-4">Искусство тайского исцеления</h1>
+                    <p class="lead text-secondary mb-4">
+                        Погрузитесь в древние традиции тайского массажа, где каждое прикосновение дарит расслабление и восстановление. Наши мастера виртуозно сочетают многовековые техники с современными спа-ритуалами.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="services.html" class="btn btn-brown btn-lg px-4">Наши процедуры</a>
+                        <a href="#" class="btn btn-outline-brown btn-lg px-4" data-bs-toggle="modal" data-bs-target="#bookingModal">Забронировать сеанс</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="images/hero.png" alt="Thai Nari Spa" class="img-fluid rounded-3 shadow-sm">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= УСЛУГИ ================= -->
+    <section class="services-section py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <span class="text-uppercase text-brown letter-spacing-2 small">Наши услуги</span>
+                <h2 class="display-6 fw-bold text-brown mt-2">Тайский массаж и SPA-услуги</h2>
+            </div>
+            
+            <div class="row g-4">
+                <!-- Карточка 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-mortarboard fs-2 text-brown"></i> <!-- Иконка -->
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">Тайский традиционный массаж</h4>
+                        <p class="text-secondary small">Уникальная техника тайского массажа существенно отличает его от европейского и позволяет активизировать акупунктурные точки.</p>
+                        <a href="#" class="text-brown fw-bold text-decoration-none mt-auto">Подробнее <i class="bi bi-arrow-right small"></i></a>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-gem fs-2 text-brown"></i> <!-- Иконка -->
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">КОРОЛЕВСКИЙ тайский массаж</h4>
+                        <p class="text-secondary small">Королевский массаж - неземная нега для избранных! Не зря все правители Таиланда выделяли минимум 1 день в неделю для расслабляющих процедур.</p>
+                        <a href="#" class="text-brown fw-bold text-decoration-none mt-auto">Подробнее <i class="bi bi-arrow-right small"></i></a>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-droplet fs-2 text-brown"></i> <!-- Иконка -->
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">Тайский ОIL массаж</h4>
+                        <p class="text-secondary small">Массаж всего тела с маслом кокоса, что отличает его от традиционного тайского массажа и делает наиболее комфортным.</p>
+                        <a href="#" class="text-brown fw-bold text-decoration-none mt-auto">Подробнее <i class="bi bi-arrow-right small"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= О НАС ================= -->
+    <section class="about-section py-5 bg-light-beige">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <img src="images/about.png" alt="О нас" class="img-fluid rounded-3 shadow">
+                </div>
+                <div class="col-lg-6 ps-lg-5">
+                    <span class="text-brown text-uppercase small letter-spacing-2">О нас</span>
+                    <h2 class="display-6 fw-bold text-brown mb-4 mt-2">Thai Nari: Гармония тела и духа</h2>
+                    <p class="text-secondary mb-4">
+                        Основанный на принципах традиционного тайского целительства, Thai Nari предлагает современным любителям оздоровительного массажа аутентичные массажные техники. Наши массажисты прошли обучение в Таиланде и привносят многолетний опыт в каждый сеанс.
+                    </p>
+                    
+                    <div class="row mt-5">
+                        <div class="col-4 text-center">
+                            <h3 class="fw-bold text-brown display-6 mb-0">15+</h3>
+                            <p class="text-secondary small mt-1">Опыт Работы</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h3 class="fw-bold text-brown display-6 mb-0">10000+</h3>
+                            <p class="text-secondary small mt-1">Довольные Клиенты</p>
+                        </div>
+                        <div class="col-4 text-center">
+                            <h3 class="fw-bold text-brown display-6 mb-0">16</h3>
+                            <p class="text-secondary small mt-1">Массажистов</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ОТЗЫВЫ ================= -->
+    <section class="testimonials-section py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="text-brown text-uppercase small letter-spacing-2">Отзывы</span>
+                <h2 class="display-6 fw-bold text-brown mt-2">Что говорят наши клиенты</h2>
+            </div>
+
+            <div class="row g-4">
+                <!-- Отзыв 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <i class="bi bi-quote fs-1 text-brown opacity-25"></i>
+                        <p class="text-secondary small mt-3 mb-4">
+                            Thai Nari стал для меня спасением! После курса тайского массажа хронические боли в спине, мучившие меня годами, наконец отступили. Мастера здесь — настоящие волшебники.
+                        </p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="bg-brown-light rounded-circle me-3" style="width: 40px; height: 40px;"></div> <!-- Аватарка -->
+                            <div>
+                                <h6 class="fw-bold text-brown mb-0">Анна</h6>
+                                <small class="text-secondary">Клиент</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отзыв 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <i class="bi bi-quote fs-1 text-brown opacity-25"></i>
+                        <p class="text-secondary small mt-3 mb-4">
+                            Это не просто массаж — это путешествие в мир гармонии. Пришла в Thai Nari с напряжением и тревогой, а ушла с ощущением, будто сбросила груз лет.
+                        </p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="bg-brown-light rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="fw-bold text-brown mb-0">Светлана</h6>
+                                <small class="text-secondary">Клиент</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Отзыв 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <i class="bi bi-quote fs-1 text-brown opacity-25"></i>
+                        <p class="text-secondary small mt-3 mb-4">
+                            Спасибо мастерам Thai Nari за их золотые руки! Никогда не верила, что за 1,5 часа можно так преобразиться - ушла усталость, выпрямилась осанка.
+                        </p>
+                        <div class="d-flex align-items-center mt-auto">
+                            <div class="bg-brown-light rounded-circle me-3" style="width: 40px; height: 40px;"></div>
+                            <div>
+                                <h6 class="fw-bold text-brown mb-0">Вячеслав</h6>
+                                <small class="text-secondary">Клиент</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= КОНТАКТЫ И ФОРМА ================= -->
+    <section class="contact-section py-5 bg-light-beige" id="contacts">
+        <div class="container py-5">
+            <h2 class="display-6 fw-bold text-brown text-center mb-5">Наши салоны</h2>
+            
+            <div class="row g-5">
+                <!-- Информация -->
+                <div class="col-lg-5">
+                    <div class="mb-4">
+                        <h5 class="fw-bold text-brown"><i class="bi bi-geo-alt-fill me-2"></i>Адрес</h5>
+                        <p class="text-secondary ms-4">г. Красноярск, ул Парусная 7</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold text-brown"><i class="bi bi-clock-fill me-2"></i>Часы работы</h5>
+                        <p class="text-secondary ms-4">Понедельник - Воскресенье: 10:00 - 22:00</p>
+                    </div>
+                    <div class="mb-4">
+                        <h5 class="fw-bold text-brown"><i class="bi bi-telephone-fill me-2"></i>Контакты</h5>
+                        <p class="text-secondary ms-4 mb-1">8(391) 278-47-40</p>
+                        <p class="text-secondary ms-4">info@thainari.com</p>
+                    </div>
+                </div>
+
+                <!-- Форма -->
+                <div class="col-lg-7">
+                    <div class="bg-card p-4 p-md-5 rounded-3">
+                        <h4 class="fw-bold text-brown mb-4 text-center">Свяжитесь с нами</h4>
+                        <form>
+                            <div class="mb-3">
+                                <label class="form-label text-brown small">Имя</label>
+                                <input type="text" class="form-control bg-white border-0 p-3" placeholder="Введите ваше имя">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label text-brown small">Телефон</label>
+                                <input type="tel" class="form-control bg-white border-0 p-3" placeholder="+7(____) ___-__-__">
+                            </div>
+                            <div class="mb-4">
+                                <label class="form-label text-brown small">Сообщение</label>
+                                <textarea class="form-control bg-white border-0 p-3" rows="4" placeholder="Ваше сообщение"></textarea>
+                            </div>
+                            <!-- CAPTCHA -->
+                                <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                                <div class="mb-4 text-center">
+                                    <div class="g-recaptcha" data-sitekey="6Lf2-_ssAAAAADQvSiQZ-yeB_PFD2CpemfH1dKAr"></div>
+                                </div>
+                            <button type="submit" class="btn btn-brown w-100 py-3">Отправить</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= ПОДВАЛ (FOOTER) ================= -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <p class="text-white-50 small">
+                        Насладитесь настоящим тайским массажем и оздоровительными процедурами в нашей студии. Здесь начинается ваш путь к расслаблению.
+                    </p>
+                </div>
+                <div class="col-lg-2 offset-lg-2">
+                    <h6 class="fw-bold mb-3">Ссылки</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Главная</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Услуги</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">О нас</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Услуги</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Тайский массаж</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Ароматический массаж</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Травяной массаж</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Массаж ног</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Соц. сети</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">VK</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+             <p class="text-white-50 small mt-2">Выполнила: Чулкова Светлана Николаевна</p>
+                </footer>
+    
+    <!-- МОДАЛЬНОЕ ОКНО ЗАПИСИ -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-3">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-brown">Записаться на сеанс</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-brown small">Ваше имя</label>
+                            <input type="text" class="form-control bg-light-beige border-0 p-3" placeholder="Введите имя">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-brown small">Телефон</label>
+                            <input type="tel" class="form-control bg-light-beige border-0 p-3" placeholder="+7(____) ___-__-__">
+                        </div>
+                        <button type="submit" class="btn btn-brown w-100 py-3">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Подключаем JavaScript Bootstrap -->
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>

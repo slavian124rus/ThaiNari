@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Услуги - Thai Nari</title>
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+<body>
+
+    <!-- ШАПКА -->
+    <nav class="navbar navbar-expand-lg py-4">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/logo.png" alt="Thai Nari Spa" class="img-fluid">
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav align-items-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="services.html">Услуги</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#contacts">Контакты</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn btn-brown px-4" data-bs-toggle="modal" data-bs-target="#bookingModal">Записаться</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ЗАГОЛОВОК СТРАНИЦЫ -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center">
+                <span class="text-uppercase text-brown letter-spacing-2 small">Наши услуги</span>
+                <h1 class="display-4 fw-bold text-brown mt-2">Тайский массаж и SPA-услуги</h1>
+                <p class="lead text-secondary mt-3">Выберите идеальную процедуру для вашего расслабления</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- УСЛУГИ -->
+    <section class="services-section py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Карточка 1 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-mortarboard fs-2 text-brown"></i>
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">Тайский традиционный массаж</h4>
+                        <p class="text-secondary small">Уникальная техника тайского массажа существенно отличает его от европейского и позволяет активизировать акупунктурные точки, тщательно проработать мышцы.</p>
+                        <div class="mt-4">
+                            <p class="text-brown fw-bold mb-2">Длительность: 60 / 90 / 120 мин</p>
+                            <p class="text-brown fw-bold mb-3">Стоимость: от 3 500 ₽</p>
+                            <a href="#" class="btn btn-brown w-100">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 2 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-gem fs-2 text-brown"></i>
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">КОРОЛЕВСКИЙ тайский массаж</h4>
+                        <p class="text-secondary small">Королевский массаж - неземная нега для избранных! Не зря все правители Таиланда выделяли минимум 1 день в неделю для расслабляющих процедур в своем королевском спа.</p>
+                        <div class="mt-4">
+                            <p class="text-brown fw-bold mb-2">Длительность: 90 / 120 мин</p>
+                            <p class="text-brown fw-bold mb-3">Стоимость: от 5 500 ₽</p>
+                            <a href="#" class="btn btn-brown w-100">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 3 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-droplet fs-2 text-brown"></i>
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">Тайский OIL массаж</h4>
+                        <p class="text-secondary small">Массаж всего тела с маслом кокоса, что отличает его от традиционного тайского массажа и делает наиболее комфортным. Позволяет эффективно проработать все мышцы и суставы.</p>
+                        <div class="mt-4">
+                            <p class="text-brown fw-bold mb-2">Длительность: 60 / 90 мин</p>
+                            <p class="text-brown fw-bold mb-3">Стоимость: от 4 000 ₽</p>
+                            <a href="#" class="btn btn-brown w-100">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 4 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-flower1 fs-2 text-brown"></i>
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">Ароматический массаж</h4>
+                        <p class="text-secondary small">Расслабляющий массаж с использованием натуральных эфирных масел. Ароматерапия помогает снять стресс, улучшить настроение и достичь глубокого расслабления.</p>
+                        <div class="mt-4">
+                            <p class="text-brown fw-bold mb-2">Длительность: 60 / 90 мин</p>
+                            <p class="text-brown fw-bold mb-3">Стоимость: от 3 800 ₽</p>
+                            <a href="#" class="btn btn-brown w-100">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 5 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-suit-heart fs-2 text-brown"></i>
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">Травяной массаж</h4>
+                        <p class="text-secondary small">Массаж горячими травяными мешочками. Уникальная тайская процедура, которая сочетает в себе тепло, ароматерапию и массаж для глубокого расслабления мышц.</p>
+                        <div class="mt-4">
+                            <p class="text-brown fw-bold mb-2">Длительность: 90 мин</p>
+                            <p class="text-brown fw-bold mb-3">Стоимость: 4 500 ₽</p>
+                            <a href="#" class="btn btn-brown w-100">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Карточка 6 -->
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 bg-card p-4 rounded-3">
+                        <div class="icon-box mb-3">
+                            <i class="bi bi-hand-index-thumb fs-2 text-brown"></i>
+                        </div>
+                        <h4 class="fw-bold text-brown mb-3">Массаж ног</h4>
+                        <p class="text-secondary small">Традиционный тайский массаж стоп и голеней. Снимает усталость, улучшает кровообращение, способствует общему расслаблению организма.</p>
+                        <div class="mt-4">
+                            <p class="text-brown fw-bold mb-2">Длительность: 45 / 60 мин</p>
+                            <p class="text-brown fw-bold mb-3">Стоимость: от 2 500 ₽</p>
+                            <a href="#" class="btn btn-brown w-100">Записаться</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПРИЗЫВ К ДЕЙСТВИЮ -->
+    <section class="py-5 bg-light-beige">
+        <div class="container py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="display-6 fw-bold text-brown mb-4">Не можете выбрать процедуру?</h2>
+                    <p class="lead text-secondary mb-4">Наши специалисты помогут подобрать идеальный массаж именно для вас</p>
+                    <a href="index.html#contacts" class="btn btn-brown btn-lg px-5">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ПОДВАЛ -->
+    <footer class="footer-section py-5 text-white">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <p class="text-white-50 small">
+                        Насладитесь настоящим тайским массажем и оздоровительными процедурами в нашей студии. Здесь начинается ваш путь к расслаблению.
+                    </p>
+                </div>
+                <div class="col-lg-2 offset-lg-2">
+                    <h6 class="fw-bold mb-3">Ссылки</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="index.html" class="text-white-50 text-decoration-none small">Главная</a></li>
+                        <li class="mb-2"><a href="services.html" class="text-white-50 text-decoration-none small">Услуги</a></li>
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none small">О нас</a></li>
+                        <li class="mb-2"><a href="index.html#contacts" class="text-white-50 text-decoration-none small">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Услуги</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Тайский массаж</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Ароматический массаж</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Травяной массаж</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Массаж ног</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2">
+                    <h6 class="fw-bold mb-3">Соц. сети</h6>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">VK</a></li>
+                        <li class="mb-2"><a href="#" class="text-white-50 text-decoration-none small">Telegram</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- МОДАЛЬНОЕ ОКНО ЗАПИСИ -->
+    <div class="modal fade" id="bookingModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-3">
+                <div class="modal-header border-0 pb-0">
+                    <h5 class="modal-title fw-bold text-brown">Записаться на сеанс</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label text-brown small">Ваше имя</label>
+                            <input type="text" class="form-control bg-light-beige border-0 p-3" placeholder="Введите имя">
+                        </div>
+                        <div class="mb-4">
+                            <label class="form-label text-brown small">Телефон</label>
+                            <input type="tel" class="form-control bg-light-beige border-0 p-3" placeholder="+7(____) ___-__-__">
+                        </div>
+                        <button type="submit" class="btn btn-brown w-100 py-3">Записаться</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+</body>
+</html>
